@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0e8c0, #f7a6b2);
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+}
+
+.timer {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff5733;
+    transition: color 0.5s ease;
+}
+
+.status {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2e8b57;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.start {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.reset {
+    background-color: #f44336;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.start:hover {
+    background-color: #45a049;
+}
+
+.reset:hover {
+    background-color: #d32f2f;
+}
+
+.message {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+    font-style: italic;
+}
